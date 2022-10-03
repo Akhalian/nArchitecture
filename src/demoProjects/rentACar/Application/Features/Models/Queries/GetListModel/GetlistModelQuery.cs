@@ -17,6 +17,7 @@ namespace Application.Features.Models.Queries.GetListModel
     public class GetlistModelQuery:IRequest<ModelListModel>
     {
         public PageRequest PageRequest { get; set; }
+
         public class GetListModelQueryHandler : IRequestHandler<GetlistModelQuery, ModelListModel>
         {
             private readonly IMapper _mapper;
